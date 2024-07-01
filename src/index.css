@@ -1,0 +1,62 @@
+:root {
+  --background-color: #ffffff;
+  --text-color: #000000;
+  --header: #ffffff;
+  --icon-color: #000000;
+}
+[data-theme="dark"] {
+  --background-color: #202c36;
+  --text-color: #ffffff;
+  --header: #2b3844;
+  --icon-color: #000000;
+}
+.body {
+  padding-top: 20px;
+  display: flex;
+  justify-content: center;
+  background-color: var(--background-color);
+}
+.card {
+  background-color: var(--background-color);
+  color: var(--text-color);
+  padding: 24px;
+  width: 264px;
+  box-shadow: rgba(0, 0, 0, 0.06) 0px 2px 4px 0px;
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Public+Sans:ital,wght@0,100..900;1,100..900&display=swap");
+body {
+  font-family: "Nunito Sans", sans-serif;
+  background-color: var(--background-color);
+  color: var(--text-color);
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+.grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 46px;
+}
+@media (min-width: 640px) {
+  .grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (min-width: 786px) {
+  .grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (min-width: 990px) {
+  .grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+@media (min-width: 1200px) {
+  .grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
